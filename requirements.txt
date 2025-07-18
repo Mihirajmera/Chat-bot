@@ -3,3 +3,5 @@ transformers
 flask-cors
 Pillow
 huggingface-hub 
+
+#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

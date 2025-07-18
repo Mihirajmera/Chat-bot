@@ -1,0 +1,5 @@
+Flask
+transformers
+flask-cors
+Pillow
+huggingface-hub 

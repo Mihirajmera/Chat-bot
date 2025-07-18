@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magex Bot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Side Panel -->
+        <div class="side-panel">
+            <div class="side-panel-header">
+                <h2>MAGEX</h2>
+                <button id="new-chat-btn" class="new-chat-btn">
+                    <span>+</span> New Chat
+                </button>
+            </div>
+            <div class="chat-history" id="chat-history">
+                <!-- Chat history items will be added here -->
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <h1><span style="letter-spacing:3px; font-weight:900; color:#fff; text-shadow:0 0 16px #6c63ff;">MAGE<span style="color:#6c63ff;">X</span></span></h1>
+                <div class="speech-controls">
+                    <button id="speech-toggle" class="speech-btn">
+                        <span id="speech-icon">🔇</span>
+                        <span id="speech-text">Speech Off</span>
+                    </button>
+                    <button id="voice-input-btn" class="voice-btn">
+                        <span id="voice-icon">🎤</span>
+                        <span id="voice-text">Voice Input</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Chat Section -->
+            <div class="section-title">💬 Chat with Magex</div>
+            <div id="chat-window"></div>
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Ask me anything or use voice input..." autocomplete="off" required />
+                <button type="submit">Send</button>
+            </form>
+            
+            <!-- Voice Status -->
+            <div id="voice-status" class="voice-status" style="display: none;">
+                <div class="voice-indicator">
+                    <div class="voice-wave"></div>
+                    <div class="voice-wave"></div>
+                    <div class="voice-wave"></div>
+                </div>
+                <p>Listening... Speak now!</p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/chat.js"></script>
+</body>
+</html>
